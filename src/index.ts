@@ -5,6 +5,8 @@ export const interconnectionAndRouting = /^14[1-9]\d$/;
 export const dataNetworkAccess = /^019(?:2\d|8[4-8])$/;
 export const operatorService = /^12(?:4(?:5\d|88)|55\d|68[689])$/;
 export const paging = /^0160[1-9]\d$/;
+export const virtualPrivateNetwork = /^188\d{2}$/;
+export const callingCard = /^189\d{2}$/;
 
 const categories = {
     internationalService,
@@ -14,6 +16,8 @@ const categories = {
     dataNetworkAccess,
     operatorService,
     paging,
+    virtualPrivateNetwork,
+    callingCard
 };
 
 export default categories;
