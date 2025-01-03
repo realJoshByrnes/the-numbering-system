@@ -1,0 +1,20 @@
+{
+  "name": "the-numbering-system",
+  "version": "1.0.0",
+  "description": "A Node.js package that includes regex patterns and tests for various categories.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/tests/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.5",
+    "mocha": "^11.0.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "author": "",
+  "license": "MIT",
+  "type": "module"
+}
