@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-import { interconnectionAndRouting } from '../index'; 
+import { interconnectionAndRouting as Regex } from '../index'; 
 
 describe('Interconnection and Routing', () => {
   it('should match valid inputs', () => {
@@ -30,7 +30,7 @@ describe('Interconnection and Routing', () => {
       { input: "1433", reason: "Valid: Matches 14 followed by a digit from 1 to 9 and any digit" },
     ];
     validInputs.forEach(({ input, reason }) => {
-      assert.strictEqual(interconnectionAndRouting.test(input), true, `Expected "${input}" to match the regex. Reason: ${reason}`);
+      assert.strictEqual(Regex.test(input), true, `Expected "${input}" to match the regex. Reason: ${reason}`);
     });
   });
 
@@ -64,7 +64,7 @@ describe('Interconnection and Routing', () => {
       { input: "14Q0", reason: "Invalid: Contains non-numeric character" },
     ];
     invalidInputs.forEach(({ input, reason }) => {
-      assert.strictEqual(interconnectionAndRouting.test(input), false, `Expected "${input}" not to match the regex. Reason: ${reason}`);
+      assert.strictEqual(Regex.test(input), false, `Expected "${input}" not to match the regex. Reason: ${reason}`);
     });
   });
 });
