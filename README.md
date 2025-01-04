@@ -1,5 +1,10 @@
 # The Numbering System (Australia)
 
+If you ask most people, Australian numbers are quite simple.
+It turns out they're not.
+
+Numbers can range from 3 digits (emergency) all the way up to 15 digits long, although most Australian's will never see those.
+
 | Service Types               | Length | Regex                                                           |
 | --------------------------- | ------ | --------------------------------------------------------------- |
 International service         |  4 | `/^001[04-689]$/`
