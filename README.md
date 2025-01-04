@@ -37,7 +37,7 @@ Satellite telephone           | 10 | `/^014[1-357]\d{6}$/`
 Data network access           | 10 | `/^0198[0-39]\d{5}$/`
 Local service                 | 10 | `/^02(38\d{6}\|[4-9]\d{7})$/` (Approx) - eg. 0252 0254 027[013467] don't exist
 Local service                 | 10 | `/^03[4-9]\d{7}$/` (Approx)
-Digital Mobile                | 10 | `/^04\d{8}$/` (Approx)
+Digital Mobile                | 10 | `/^04\d{8}$/` (Approx) (see [MOBILES.md](MOBILES.md))
 Local service                 | 10 | `/^07[2-57]\d{7}$/` (Approx)
 Local service                 | 10 | `/^08(51\d{6}\|6-9\d{7})$/` (Approx)
 Incoming only international   | 10 | `/^1(20(1([1-356]\d|4[04]|99)|2\d{2})|0(101|34\d)\d)\d{4}$/`
