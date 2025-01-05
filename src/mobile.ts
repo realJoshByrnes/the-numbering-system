@@ -80,8 +80,12 @@ const providers = [
   { name: 'TELSTRA LIMITED', regex: /^049[7-9]\d{6}$/ }
 ];
 
+const providers2 = [
+    { name: 'MEDIA', regex: /^049157(0(006|1(5[6-9]|10)|313|737)|1(266|491|804)|2(549|665|983)|3(770|087)|4(118|632)|5(254|789)|6(398|801)|7(426|644)|8(957|(14|88)8)|9(212|760|455))$/ },
+]
+
 function checkProvider(phoneNumber: string) {
-  for (const provider of providers) {
+  for (const provider of providers2) {
     if (provider.regex.test(phoneNumber)) {
         return provider.name;
     }
